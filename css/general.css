@@ -49,5 +49,11 @@ a {
   font-size: 1.125rem;
   text-decoration: underline;
   font-family: 'Open Sans', sans-serif;
+  display: inline-flex;
+  align-items: center;
 }
-
+.enter_href img {
+  margin-left: 10px;
+  width: 17px;
+  height: 14px;
+}
