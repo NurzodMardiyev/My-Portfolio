@@ -68,9 +68,6 @@
   border-radius: 50%;
   background-color: #FFAF29;
 }
-#header .name {
-
-}
 #header .name h1{
   font-size: 5.625rem;
   font-weight: 800;
@@ -237,5 +234,29 @@
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+  }
+  
+  #contact .main-info {
+    max-width: 400px;
+  }
+  #contact .enterance {
+    font-size: 0.675rem;
+    margin-bottom: 10px;
+  }
+  #contact .enter_title {
+    padding: 0 20px;
+    font-size: 1.075rem;
+    margin-bottom: 15px;
+  }
+  #contact .enter_info {
+    font-size: 0.875rem;
+    padding: 0 20px;
+    margin-bottom: 25px;
+    line-height: 20px;
+  }
+  #contact .enter_href {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    display: block;
   }
 }
