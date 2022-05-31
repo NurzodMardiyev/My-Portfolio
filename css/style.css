@@ -2,11 +2,12 @@
 
 /* Header Section */
 #header {
+  outline: 1px solid red;
   width: 100%;
   height: 630px;
   background-image: url("../img/nurzod.png");
   background-repeat: no-repeat;
-  bottom: 0;
+  background-size: auto;
   background-position: 360px;
 }
 #header::after,
@@ -26,7 +27,7 @@
   justify-content: space-between;
 }
 #header .container:nth-child(1) {
-  margin-top: 80px;
+  margin-top: 80px; 
 }
 #header .container:nth-child(2) {
   margin-top: 50px;
