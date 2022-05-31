@@ -2,7 +2,7 @@
 
 /* Header Section */
 #header {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   width: 100%;
   height: 630px;
   background-image: url("../img/nurzod.png");
@@ -68,10 +68,14 @@
   border-radius: 50%;
   background-color: #FFAF29;
 }
+#header .name {
+
+}
 #header .name h1{
   font-size: 5.625rem;
   font-weight: 800;
   color: #F4F4F4;
+  display: inline-block;
 }
 #header .name h1 span {
   color: #FFAF29;
@@ -92,12 +96,13 @@
   margin-top: 120px;
 }
 #header .main-info {
-  width: 400px;
+  padding: 0 10px;
 }
 
 /* --------------Media Screen Max-Width: 600px------------- */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 790px) {
   #header {
+    display: flex;
     height: 100%;
     width: 100%;
     /* bottom: 0; */
@@ -106,6 +111,7 @@
   }
   #header > div {
     width: 100%;
+    outline: 1px solid red;
     background-color: rgba(0, 0, 0, 0.5)
   }
   #header .container {
@@ -136,8 +142,10 @@
     align-items:center;
   }
   #header .name h1{
-    font-size: 4.625rem;
+    font-size: 3.625rem;
     font-weight: 700;
+    display: inline-block;
+    padding: 0 10px;
   }
   #header .name h1::after {
     content: "";
@@ -146,34 +154,31 @@
     background-color:#FFAF29;
     margin: auto;
   }
-
-  #header .social_media {
-    display: block;
-    margin-top: 10px;
+  #header .name .social_media a {
+    margin: 20px 10px;
   }
   #header .main-info {
     max-width: 400px;
   }
-  .enterance {
+  #header .enterance {
     font-size: 0.675rem;
     margin-bottom: 10px;
   }
-  .enter_title {
+  #header .enter_title {
+    padding: 0 20px;
+    font-size: 1.075rem;
+    margin-bottom: 15px;
+  }
+  #header .enter_info {
     font-size: 0.875rem;
-    color: #fff;
+    padding: 0 20px;
     margin-bottom: 25px;
+    line-height: 20px;
   }
-  .enter_info {
-    color: #9697A2;
+  #header .enter_href {
     font-size: 1rem;
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 35px;
-  }
-  .enter_href {
-    color: #F9BE5C;
-    font-size: 1.125rem;
-    text-decoration: underline;
-    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+    display: block;
   }
 }
 
