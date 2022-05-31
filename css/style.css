@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+/* Header Section */
+#header {
+  width: 100%;
+  height: 630px;
+  background-image: url("../img/nurzod.png");
+  background-repeat: no-repeat;
+  bottom: 0;
+  background-position: 360px;
+}
+#header::after,
+#header::before {
+  display: table;
+  content: "";
+  clear: both;
+}
+#header> div::after,
+#header> div::before {
+  display: table;
+  content: "";
+}
+#header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .container:nth-child(1) {
+  margin-top: 80px;
+}
+#header .container:nth-child(2) {
+  margin-top: 50px;
+}
+#header .logo {
+  width: 60px;
+}
+#header .navbar {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  justify-content: space-between;
+}
+#header .navbar a {
+  color: #656774;
+  font-size: 1.875rem;
+  /* margin-left: 30px; */
+  font-weight: 600;
+  line-height: 50px;
+}
+#header .navbar .active {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items:center;
+}
+#header .navbar .active::after {
+  content: "";
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  display: block;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: #FFAF29;
+}
+#header .name h1{
+  font-size: 5.625rem;
+  font-weight: 800;
+  color: #F4F4F4;
+}
+#header .name h1 span {
+  color: #FFAF29;
+}
+#header .name h1::after {
+  content: "";
+  height: 8px;
+  width: 55px;
+  background-color:#FFAF29;
+  display: block;
+}
+#header .name .social_media {
+  display: flex;
+  align-items: center;
+}
+#header .name .social_media a {
+  margin-right: 20px;  
+  margin-top: 120px;
+}
+#header .main-info {
+  width: 400px;
+}
+
+/* --------------Media Screen Max-Width: 600px------------- */
+@media screen and (max-width: 600px) {
+  #header {
+    height: 100%;
+    width: 100%;
+    /* bottom: 0; */
+    background-position: bottom;
+    text-align: center;
+  }
+  #header > div {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5)
+  }
+  #header .container {
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+  }
+  #header .container:nth-child(1) {
+    margin-top: 30px;
+  }
+  #header .container:nth-child(2) {
+    margin-top: 20px;
+  }
+  #header .logo img{
+    width: 60px;
+  }
+  #header .navbar {
+    max-width: 200px;
+  }
+  #header .navbar a {
+    font-size: 0.875rem;
+    color: rgb(185, 185, 185);
+  }
+  #header .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
+  #header .name h1{
+    font-size: 4.625rem;
+    font-weight: 700;
+  }
+  #header .name h1::after {
+    content: "";
+    height: 8px;
+    width: 55px;
+    background-color:#FFAF29;
+    margin: auto;
+  }
+
+  #header .social_media {
+    display: block;
+    margin-top: 10px;
+  }
+  #header .main-info {
+    max-width: 400px;
+  }
+  .enterance {
+    font-size: 0.675rem;
+    margin-bottom: 10px;
+  }
+  .enter_title {
+    font-size: 0.875rem;
+    color: #fff;
+    margin-bottom: 25px;
+  }
+  .enter_info {
+    color: #9697A2;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 35px;
+  }
+  .enter_href {
+    color: #F9BE5C;
+    font-size: 1.125rem;
+    text-decoration: underline;
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+/* Contact Section*/
+
+#contact {
+  width: 100%;
+  height: 732px;
+  background-color: #242734;
+}
+#contact::after,
+#contact::before {
+  display: table;
+  content: "";
+  clear: both;
+}
+#contact .container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin-top: 120px;
+}
+#contact .container > div {
+  width: 50%;
+}
+#contact .number-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#contact .number-info > div {
+  display: flex;
+  align-items: center;
+}
+#contact .number-info > div > span {
+  color:#FFAF29;
+  font-size: 3.75rem;
+  font-weight: 500;
+}
+#contact .number-info > div > p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .875rem;
+  font-weight: 600;
+  color: #FBF7F7;
+  margin-left: 15px;
+}
+#contact .enter_href {
+  display: block;
+  margin-top: 60px;
+}
+@media screen and (max-width: 600px) {
+  #contact {
+    height: 100%;
+  }
+  #contact .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+}
